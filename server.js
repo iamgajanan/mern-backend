@@ -10,6 +10,9 @@ require("dotenv").config();
 
 app.use(express.json())
 
+app.get("/", (req, res) => {
+  res.status(200).send("Server is running 🚀");
+});
 app.use("/api/auth",authRouter)
 app.use("/api/form",contactRouter)
 app.use(errorMiddleware)
