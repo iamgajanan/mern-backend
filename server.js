@@ -15,7 +15,7 @@ app.use("/api/form",contactRouter)
 app.use(errorMiddleware)
 
 
-const PORT =1234
+const PORT = process.env.PORT || 5000;
 
 connectDB().then(()=>{
 app.listen(PORT, ()=>{
