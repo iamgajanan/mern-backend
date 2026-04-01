@@ -1,5 +1,5 @@
 const express =require("express")
-const  authController  = require("../controller/auth-controller")
+const authController  = require("../controller/auth-controller")
 const router = express.Router()
 const {registerSchema, loginSchema,} = require("../validators/validators")
 const validate = require("../middleware/validate-middleware")
